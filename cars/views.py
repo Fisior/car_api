@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
-# Create your views here.
+from .models import Car
+from .serializers import CarSerializer
+
+
+def index(request):
+    return HttpResponse("Hello World")
